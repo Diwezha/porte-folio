@@ -1,0 +1,132 @@
+body{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 20% auto auto 20%; 
+}
+
+
+
+            /* HEADER */
+
+header{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+header+h1{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+
+    padding: 0.5em;
+}
+
+
+
+            /* NAV */
+
+body>nav{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+
+    background-color: #FFDE8B;
+}
+
+
+
+            /* MAIN */
+
+main {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+
+    display: grid;
+    grid-template-columns: 40% 40% 20%;
+    grid-template-rows: auto auto auto;
+}
+
+section{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+
+    background-color: #FFFFCF;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    border: solid 2px #FFC95F;
+}
+section img{
+    margin: 1em;
+    width: 90%;
+    height: auto;
+}
+
+article{
+    border : 2px solid #FFC95F;
+}
+
+main>article:nth-child(1){
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+
+    border-color: #FFDE8B;
+}
+main>article:nth-child(3){
+    border-color: #FFDE8B;
+}
+main>article:last-of-type{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    
+    background-color: #FFFFCF;
+    border: 2px solid #FFDE8B;
+
+    padding: 0.5em;
+}
+
+main>article:last-of-type>h3{
+    padding: 0.25em 0.5em;
+    margin: 0;
+}
+main>article:last-of-type>ul{
+    padding: 0.25em 0;
+    margin: 0;
+}
+
+
+
+            /* FOOTER */
+
+footer {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+
+            /* ANIMATIONS */
+section img:hover{
+    border: black solid 3px;
+    position: relative;
+    right: 10em;
+    width: 25em;
+}

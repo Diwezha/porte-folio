@@ -1,0 +1,61 @@
+main article a{
+    text-decoration: underline;
+}
+
+i{
+    display: block;
+    font-size: 75%;
+    font-style: normal;
+
+}
+
+
+            /* LISTES */
+
+main article ul{
+    list-style: none;
+}
+
+main article>ul{
+    background-color: #FFC95F;
+    border-radius: 1em;
+    padding: 1em;
+
+    display: flex;
+    justify-content: start;
+    align-items: start;
+}
+
+main article>ul>li{
+    background-color: #FFDE8B;
+    border-radius: 0.75em;
+    padding: 1em;
+    margin: 0.25em;
+    height: 4em;
+}
+
+main article>ul ul{
+    display: none;
+}
+ul ul>li i{
+    text-indent: 1em;
+}
+
+
+            /* ANIMATION */
+
+main article>ul>li:hover ul{
+    display: block;
+}
+
+main article>ul>li:hover{
+    height: auto;
+}
+
+
+
+
+
+
+
+

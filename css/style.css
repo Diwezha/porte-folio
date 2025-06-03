@@ -1,0 +1,287 @@
+            /*POLICE*/
+@font-face {
+    font-family: 'Jaldi';
+    src: url(../fonts/Jaldi\,Jaro/Jaldi/Jaldi-Regular.ttf) format('truetype');
+    
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Jaldi';
+    src: url(../fonts/Jaldi\,Jaro/Jaldi/Jaldi-Bold.ttf) format('truetype');
+    
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Jaro';
+    src: url(../fonts/Jaldi\,Jaro/Jaro/Jaro-Regular-VariableFont_opsz.ttf) format('truetype');
+    
+    font-style: normal;
+}
+
+
+
+            /* GENERALE */
+
+body{
+    font-size: 1.5em;
+    font-family: 'Jaldi';
+    margin: 0;
+}
+
+h1, h2, h3{
+    font-family: 'Jaro';
+}
+h1{
+    font-size: 4em;
+}
+h2{
+    font-size: 3em;
+    margin: 0.15em;
+}
+h3{
+    font-size: 2em;
+    margin: 0.15em;
+}
+a{
+    color: #000;
+    text-decoration: none;
+}
+img{
+    width: 6em;
+}
+
+
+
+            /* HEADER */
+
+header{
+    display: grid;
+    grid-template-columns: 60% 20% 20%;
+    grid-template-rows: 100%;
+
+    background-color: #FFC95F;
+}
+
+header>h1{
+    font-size: 4.5em;
+
+    padding-left: 1em;
+    margin: 0.125em;
+
+    justify-self: center;
+    align-self: center;
+}
+
+header>h2{
+    font-size: 2em;
+    font-family: 'Jaldi';
+    font-weight: normal;
+
+    justify-self: end;
+    align-self: center;
+    height: 3.5em;
+    
+    padding: 0;
+    margin: 0.125em;
+}
+
+header img{
+    border-radius: 50%;
+
+    justify-self: start;
+    align-self: center;
+
+    padding: 0;
+    margin: 1em;
+}
+
+header+h1, main>h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(0, #FFC95F 20%, #FFEBA5 80%, white 100%) ;
+
+    padding-left: 0em;
+    margin: 0em;
+}
+
+
+
+            /* NAV */
+
+nav{
+    padding: 0.25em;
+}
+nav#mesProjets {
+    padding: 0.75em;
+}
+
+nav li{
+    text-align: left;
+}
+
+nav>h2{
+    margin-left: 1em;
+    margin-bottom: 0.5em;
+}
+nav>div:nth-child(2){
+    border-left: 3px solid #000;
+}
+footer nav>div:nth-child(2){
+    border : none;
+}
+nav ul{
+    list-style: none;
+}
+nav>div:nth-child(3){
+    display: none;
+}
+
+
+            /* MAIN */
+
+article{
+    padding: 0.5em;
+}
+
+p{
+    margin: 1em;
+}
+
+
+
+            /* FOOTER */
+
+footer{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 100%;
+    
+    background-color: #FFC95F;
+
+    font-size: 0.75em;
+}
+
+footer>nav{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+    border-left: 3px solid #000;
+
+    margin : 0.25em;
+    margin-left: 1em;
+} 
+
+footer>address{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+    background-color: #FFDE8B;
+
+    text-align: end;
+
+    padding: 0.5em;
+    padding-right: 1em;
+}
+
+footer p, footer h2{
+    font-size: 1.5em;
+}
+
+        /* ANIMATIONS */
+
+nav.menu{
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-rows: 15% auto;
+}
+body>nav.menu>div{
+    background-color: #FFC95F;
+    margin: 0.75em;
+}
+
+
+
+
+
+
+/* 
+nav#mesProjets div{
+    background-color: #FFC95F;
+}
+
+nav#mesProjets.menu div{
+    background-color: #FFDE8B;
+    margin: 0.75em;
+} */
+
+
+
+
+
+
+
+
+footer>nav.menu>div{
+    background-color: #FFDE8B;
+    margin-right: 1em;
+}
+nav.menu div{
+    border: none;
+    border-radius: 2em;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 0.5em;
+}
+nav.menu>div:last-of-type ul, nav.menu>div:last-of-type ol{
+    visibility: hidden;
+    position: absolute;
+}
+nav.menu>h2{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+nav.menu>div:first-of-type{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+} 
+nav.menu>div:first-of-type>ul, nav.menu>div:first-of-type>ol{
+    border-left: 3px solid black;
+    font-size: 80%;
+}
+nav.menu>div:last-of-type{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+nav.menu ul{
+    list-style:disc;
+}
+nav.menu li:hover{
+    font-weight: bold;
+}
+nav.menu>div:last-of-type ul.listeDesProjets{
+    visibility: visible;
+    position: static;
+}
+footer nav.menu{
+    border : none;
+}
